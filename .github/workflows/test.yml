@@ -28,4 +28,4 @@ jobs:
         if: success() || failure()        # run this step even if the previous step failed
         with:
           name: test-results
-          path: test-results/**/*.xml
+          path: build/test-results/**/*.xml
