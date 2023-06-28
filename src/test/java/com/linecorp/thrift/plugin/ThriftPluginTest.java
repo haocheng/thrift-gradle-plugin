@@ -104,7 +104,7 @@ public class ThriftPluginTest {
     }
 
     @Test
-    void test_failed() {
+    void test_failed1() {
         assertThat(false).isTrue();
     }
 
