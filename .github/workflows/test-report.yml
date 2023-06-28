@@ -4,8 +4,6 @@ on:
     workflows: [CI]                     # runs after CI workflow
     types:
       - completed
-    branches: [ "master" ]
-
 jobs:
   report:
     runs-on: ubuntu-latest
