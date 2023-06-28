@@ -28,6 +28,7 @@ import org.gradle.testkit.runner.BuildResult;
 import org.gradle.testkit.runner.GradleRunner;
 import org.gradle.testkit.runner.TaskOutcome;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -100,6 +101,11 @@ public class ThriftPluginTest {
         assertThat(projectDir.resolve("build/generated-sources/thrift/")
                              .resolve("com/linecorp/thrift/plugin/test/TestStruct.java")
         ).exists();
+    }
+
+    @Test
+    void test_failed() {
+        assertThat(false).isTrue();
     }
 
     @ParameterizedTest
