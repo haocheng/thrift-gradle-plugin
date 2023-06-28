@@ -108,6 +108,11 @@ public class ThriftPluginTest {
         assertThat(false).isTrue();
     }
 
+    @Test
+    void test_success() {
+        assertThat(true).isTrue();
+    }
+
     @ParameterizedTest
     @ValueSource(strings = { "7.6" })
     public void generateNonJava(String version) throws Exception {
