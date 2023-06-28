@@ -28,6 +28,7 @@ import org.gradle.testkit.runner.BuildResult;
 import org.gradle.testkit.runner.GradleRunner;
 import org.gradle.testkit.runner.TaskOutcome;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -55,6 +56,12 @@ public class ThriftPluginTest {
                    projectDir.resolve("src/main/thrift/test.thrift"));
 
         thriftPath = Paths.get("lib/thrift-0.17.0");
+    }
+
+    @Test
+    void test() {
+        // triggering CI for testing Github Action
+        assertThat(true).isTrue();
     }
 
     @ParameterizedTest
