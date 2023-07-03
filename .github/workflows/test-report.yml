@@ -15,3 +15,9 @@ jobs:
           name: JUnit Tests
           path: '**/*.xml'
           reporter: java-junit
+
+      - name: Display Checkstyle report
+        uses: jwgmeligmeyling/checkstyle-github-action@master
+        with:
+          artifact: checkstyle-report
+          path: '*.xml'
