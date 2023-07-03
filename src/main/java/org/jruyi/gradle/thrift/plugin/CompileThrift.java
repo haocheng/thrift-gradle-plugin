@@ -249,7 +249,7 @@ public class CompileThrift extends DefaultTask {
             return;
         }
 
-        final List<File> changedFiles = new ArrayList<>();
+        List<File> changedFiles = new ArrayList<>();
         inputs.outOfDate(change -> {
             if (change.getFile().getName().endsWith(".thrift")) {
                 changedFiles.add(change.getFile());
