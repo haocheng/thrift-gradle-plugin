@@ -298,7 +298,7 @@ public class CompileThrift extends DefaultTask {
     }
 
     void compile(String source) {
-        final List<String> cmdLine = new ArrayList<>(
+        List<String> cmdLine = new ArrayList<>(
                 Arrays.asList(thriftExecutable, createGenFolder ? "-o" : "-out", outputDir.getAbsolutePath()));
         generators.forEach((key, value) -> {
             cmdLine.add("--gen");
