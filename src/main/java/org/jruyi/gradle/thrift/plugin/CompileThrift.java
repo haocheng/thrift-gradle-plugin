@@ -205,7 +205,8 @@ public class CompileThrift extends DefaultTask {
         if (this.outputDir == outputDir) {
             return;
         }
-        final File oldOutputDir = currentOutputDir();
+
+        File oldOutputDir = currentOutputDir();
         this.outputDir = (File) outputDir;
         addSourceDir(oldOutputDir);
     }
