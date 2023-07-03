@@ -310,7 +310,6 @@ public class CompileThrift extends DefaultTask {
             }
             cmdLine.add(cmd);
         });
-
         includeDirs.forEach(includeDir -> {
             cmdLine.add("-I");
             cmdLine.add(includeDir.getAbsolutePath());
