@@ -256,7 +256,7 @@ public class CompileThrift extends DefaultTask {
             }
         });
 
-        final boolean[] removed = new boolean[] { false };
+        boolean[] removed = new boolean[] { false };
         inputs.removed(change -> {
             removed[0] = true;
         });
